@@ -1,0 +1,72 @@
+.btn-outline {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+	text-transform: uppercase;
+	transition: color .1s linear;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 500;
+	font-size: 16px;
+	transition: color .3s linear;
+		
+	@include media ('>=tablet') {
+		color: $white;
+	}
+
+	&:hover {
+		color: $white;
+		text-decoration: none;
+
+	@include media ('>=tablet') {
+		color: grey;
+		}
+	}
+}
+
+.btn {
+	transition: background-color .3s linear;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 20px 125px;
+	border-radius: 4px;
+	text-align: center;
+	border: none;
+	color: $white;
+	background-color: #193245;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	min-width: 125px;
+	font-weight: 500;
+	width: 100%;
+	
+	@include media ('>=tablet') {
+		padding: 20px 40px;
+		width: 0;
+	}
+
+	&:hover {
+		background-color: #2e5c7f;
+		text-decoration: none;
+		outline: none;
+	}
+}
+
+.btn-contact {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	border: 1px solid white;
+	padding: 10px 20px;
+	transition: color .3s linear, border-color .3s linear;
+	display: none;
+
+	&:hover {
+		text-decoration: none;
+		color: $gray;
+		border-color: $gray;
+	}
+
+	@include media ('>=desktop') {
+		display: block;
+	}
+}

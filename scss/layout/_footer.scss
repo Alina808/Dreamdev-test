@@ -1,0 +1,149 @@
+.footer {
+	padding-top: 41px;
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -20px 0 0;
+		border-bottom: 1px solid #494949;
+
+	@include media ('>=desktop') {
+		margin: 0 -20px 0 0;
+		}
+	}
+
+	.col-1 {
+		width: 50%;
+		padding: 0 20px 20px 0;
+	}
+
+	.col {
+	@include media ('>=tablet') {
+		width: 33.33%;
+		}
+
+	@include media ('>=desktop') {
+		width: 20%;
+		padding: 0 20px 0 0;
+		}
+	}
+
+	.col-2 {
+	@include media ('>=tablet') {
+		width: 100%;
+	}
+
+	@include media ('>=desktop') {
+		width: 40%;
+		}
+	}
+}
+
+.footer-list {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	a {
+		color: rgba(255, 255, 255, 0.87);
+		cursor: pointer;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: color .3s linear;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 16px;
+
+		&:hover {
+			color: $gray
+		}
+	}
+
+	li {
+		list-style: none;
+		margin: 0 0 15px 0;
+	}
+}
+
+.phone,
+.mailto {
+	color: rgba(255, 255, 255, 0.87);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+	padding-bottom: 20px;
+	transition: color .3s linear;
+	display: block;
+
+	@include media ('>=tablet') {
+		font-size: 16px;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $gray
+	}
+}
+
+.social-networks {
+	cursor: pointer;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	a {
+		color: rgba(255, 255, 255, 0.87);
+		text-decoration: none;
+		transition: color .3s linear;
+
+		&:hover {
+			color: $gray;
+		}
+	}
+
+	li {
+		margin: 0 32px 0 0;
+	}
+}
+
+.form {
+	@include media ('>=tablet') {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0 0 30px;
+	}
+
+	.btn {
+	margin-top: 26px;
+
+	@include media ('>=tablet') {
+		margin: 0 15px 0 10px;
+	}
+
+	}
+}
+
+.logo {
+	display: none;
+
+	@include media ('>=tablet') {
+		display: block;
+	}
+}
+
+.paragraph {
+		padding: 9px 0 0 0;
+	@include media ('>=tablet') {
+		display: flex;
+	}
+
+	.text-1 {
+		@include media ('>=tablet') {
+			padding: 0 80px 0 0;
+		}
+	}
+}
+
